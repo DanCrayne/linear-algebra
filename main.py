@@ -7,6 +7,9 @@ print(lib.pretty_print(A))
 
 v = lib.Vector([1,2,3])
 print str(v)
+print "||v|| is %f" % v.norm()
+print "v/||v|| is %s" % str(v.normalized())
+print "v has %d dimensions" % v.dimensions()
 
 '''
 try:
