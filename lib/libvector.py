@@ -15,13 +15,6 @@ input:  v1, v2 are the vectors, represented by equal length one dimensional
 
     return dot_prod
 
-# v/||v|| = u (unit vector) 
-def normalize(v):
-    return
-
-# ||v|| = c (some scalar)
-def norm(v):
-    return
 
 # projects vector a onto vector b
 def project(a, b):
