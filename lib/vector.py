@@ -21,7 +21,7 @@ class Vector:
         self.components = components
 
     def __str__(self):
-        """Converts the vector to a string for viewing.""" 
+        """Converts the vector to a pretty string for viewing.""" 
 
         return '[ ' + ', '.join([str(x) for x in self.components]) + ' ]'
 
@@ -49,8 +49,9 @@ class Vector:
         return math.sqrt(sum_of_squares)
 
     def normalized(self):
-        """Computes the normalized form of a vector; that is, a vector
-           which has the same direction, but length 1 (i.e. unit vector).
+        """Computes the normalized form of this vector; that is, a vector
+           which has the same direction, but length 1 (i.e. unit vector),
+           without changing this vector.
 
            Returns:
                 A new vector which is normalized for this vector.
